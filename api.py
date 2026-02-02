@@ -203,7 +203,3 @@ def admin_revoke(
     con.close()
 
     return {"status": "revoked"}
-
-@app.get("/_routes")
-def routes():
-    return [r.path for r in app.routes]
