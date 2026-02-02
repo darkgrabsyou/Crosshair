@@ -6,7 +6,7 @@ import os
 from contextlib import asynccontextmanager
 import secrets
 
-DB = "/data/tokens.db"
+DB = "tokens.db"
 ADMIN_KEY = os.getenv("ADMIN_KEY", "olly6969")
 
 PLAN_DURATIONS = {
