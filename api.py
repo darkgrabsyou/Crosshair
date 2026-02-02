@@ -42,8 +42,6 @@ def require_admin(x_admin_key: str | None = Header(None)):
         raise HTTPException(status_code=401, detail="Unauthorized")
 
 def init_db():
-    os.makedirs(os.path.dirname(DB), exist_ok=True)
-
     con = sqlite3.connect(DB)
     cur = con.cursor()
     cur.execute("""
