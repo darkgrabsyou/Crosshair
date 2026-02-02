@@ -203,3 +203,7 @@ def admin_revoke(
     con.close()
 
     return {"status": "revoked"}
+    
+@app.get("/")
+def root():
+    return {"status": "ok"}
